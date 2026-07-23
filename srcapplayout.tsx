@@ -1,0 +1,15 @@
+import React from 'react';
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body className="bg-white text-secondary dark:bg-darkNavy dark:text-white antialiased transition-colors duration-300">
+        {children}
+      </body>
+    </html>
+  );
+}
